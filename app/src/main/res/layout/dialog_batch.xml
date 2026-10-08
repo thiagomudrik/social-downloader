@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PASTE YOUR LINKS (one per line)"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/input_many_links"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:hint="https://...\nhttps://...\nhttps://..."
+        android:gravity="top"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="CANCEL"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/black"
+            android:text="CONTINUE"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
