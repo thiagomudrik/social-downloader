@@ -30,7 +30,6 @@ android {
 }
 
 chaquopy {
-    buildPython "3.8"
     defaultConfig {
         version "3.8"
         pip {
